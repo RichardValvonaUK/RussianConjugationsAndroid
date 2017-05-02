@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Russian Noun, Adjective and Verb conjugations</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="ad_unit_id">ca-app-pub-9826697266734102/3203265273</string>
+    <string name="downloading_data_prior_to_statup_msg">Welcome to the Russian Noun, Adjective and Verb Conjugator. Please wait while we try and download the word data...</string>
+    <string name="downloading_data_in_progress_msg">Downloading data... Please be patient...</string>
+    <string name="downloading_data_failed_msg">Failed to download the data. Please try again!</string>
+    <string name="downloading_data_failed_msg_with_internet_msg">Failed to download the data. You are connected to a device, but it appears that a router or firewall is blocking access to internet. If you are away from home and are connected to public WIFI then please ensure you are signed in first. If you are having trouble reaching their signing-on page, you can often locate it manually by typing http://1.1.1.1 into the address bar.</string>
+    <string name="downloading_data_failed_msg_without_internet_msg">Failed to download the data. You are currently not connected to any device. Please ensure you are connected before proceeding with the data download.</string>
+    <string name="with_data_startup_msg">Welcome to the Russian Noun, Adjective and Verb Conjugator. To get started please open up the left-hand drawer where you can enter any Russian word you wish and it will list each word by spelling relevance. Alternatively, you can also match by English word.</string>
+
+    <string-array name="word_types_options">
+        <item>All Words</item>
+        <item>Only Nouns</item>
+        <item>Only Adjectives</item>
+        <item>Only Verbs</item>
+        <item>English Words</item>
+    </string-array>
+
+    <string-array name="match_language_options">
+        <item>Match Russian Words</item>
+        <item>Match English Words</item>
+    </string-array>
+
+    <string-array name="search_mode_match_options">
+        <item>Match Input Anywhere</item>
+        <item>Match First Letters</item>
+        <item>Match End Letters</item>
+    </string-array>
+</resources>

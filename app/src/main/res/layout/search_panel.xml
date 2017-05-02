@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@android:color/white"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:background="@android:color/holo_orange_light"
+        android:layout_weight="0">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:text=""
+            android:ems="10"
+            android:hint="Enter word to search here"
+            android:id="@+id/searchTextInput"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchButton"
+            android:onClick="searchButtonClicked"
+            android:layout_weight="0" />
+
+    </LinearLayout>
+
+    <TextView
+        android:ems="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/russianCyrillicDisplay"
+        android:layout_weight="0"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="?android:attr/editTextColor"
+        android:visibility="gone"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:columnCount="2">
+
+        <TextView
+            android:text="Search from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_columnWeight="0" />
+
+        <Spinner
+            android:id="@+id/wordTypesSelector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="0"
+            android:layout_weight="1"
+            android:elevation="0dp"
+            android:entries="@array/word_types_options" />
+    </GridLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/searchResultsList"
+        android:layout_weight="0.76"
+        android:padding="?attr/dialogPreferredPadding" />
+</LinearLayout>

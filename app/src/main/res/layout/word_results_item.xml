@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/resultsListItem"
+    >
+
+    <richardvalvona.uk.android.russianconjugations.myapplication.ResultsListLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_info"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        >
+
+        <TextView
+            android:id="@+id/matchedWordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/mainWordText"
+                android:layout_weight="1"
+                android:layout_width="match_parent" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/categoryText"
+                android:layout_weight="0"
+                android:text="m"
+                android:layout_width="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="false" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/translationsText"
+            android:layout_below="@+id/translationsText"
+            android:layout_toRightOf="@+id/checkBox"
+            android:layout_toEndOf="@+id/checkBox"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+    </richardvalvona.uk.android.russianconjugations.myapplication.ResultsListLayout>
+
+</LinearLayout>
