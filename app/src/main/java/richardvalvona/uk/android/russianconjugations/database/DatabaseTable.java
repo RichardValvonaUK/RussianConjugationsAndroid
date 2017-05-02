@@ -26,6 +26,7 @@ public abstract class DatabaseTable {
     public final static int NUMBER_S = 0;
     public final static int NUMBER_P = 1;
 
+    public final static String TABLE_NAME_NOUNS_WITH_REMNANTS = "nouns_with_remnants";
     public final static String TABLE_NAME_NOUNS = "nouns";
     public final static String TABLE_NAME_ADJECTIVES = "adjectives";
     public final static String TABLE_NAME_VERBS = "verbs";
